@@ -1,0 +1,40 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: #2a2a72;
+  font-size: 18px;
+  font-family: 'permanent Marker', cursive;
+}
+
+h1{
+  color: #009ffd;
+  font-family: 'permanent Marker', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+
+}
+p {
+    font-family: 'permanent Marker', cursive;
+    letter-spacing: 0.1rem;
+     text-transform: uppercase;
+}
+.footBtn {
+ 
+    width:140px;
+
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover img{
+  transform: scale(1.2);
+}
+

@@ -1,0 +1,16 @@
+
+
+<br><h1>Department List</h1>
+<div class="container">
+<mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-tile *ngFor="let Employee of  _employeeList">
+
+    <mat-card class="card">
+  
+  <mat-card-content><ul><li>
+    <p class="department">{{Employee.Department}} </p></li></ul>
+ </mat-card-content>
+  </mat-card>
+</mat-grid-tile>
+</mat-grid-list>
+</div>

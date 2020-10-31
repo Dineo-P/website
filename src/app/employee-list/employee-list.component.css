@@ -1,0 +1,94 @@
+    
+    .container{
+background-image:url("https://www.webpartner.co.za/images/bottombg.jpg");
+    }
+.card {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.07);
+} 
+/* .mat-card  img {
+  object-fit: fill;
+  
+  min-height: 200px;
+  width: 100%;
+ 
+} */
+.BtnContainer{
+  display: flex;
+  flex-direction: column;
+ 
+}
+ /* display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;    
+    margin-top: 12px; */
+
+.BtnContainer button {
+
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+     font-weight: 700;
+}
+.deleteBtn{
+ margin-top: 2px
+}
+
+.title {
+  color: #2a2a72;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+      text-align: center;
+}
+.department {
+   color: #009ffd;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+      text-align: center;
+       font-weight: 700;
+}
+
+h1{
+  color: #009ffd;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+    text-align: center;
+
+}
+p {
+    font-family: 'permanent Marker', cursive;
+    letter-spacing: 0.1rem;
+     text-transform: uppercase;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+.deleteBtn:hover {
+  background-color: #f44336;
+}
+.updateBtn:hover {
+background-color:#ffd740;
+}
+/* .card:hover img{
+  transform: scale(1.2);
+} */
+

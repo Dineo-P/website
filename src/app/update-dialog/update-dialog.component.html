@@ -1,0 +1,48 @@
+ <mat-toolbar class="toolbar">
+<h2 mat-dialog-title>{{message}}</h2>
+      
+        <i (click)="onNoClick()" class="material-icons">cancel</i>
+         <span class="toolbar-spacer"></span>
+ </mat-toolbar>
+   <mat-dialog-content>
+  
+    <div class="container">
+      <form [formGroup]="_contactForm" (submit)="onSubmit()" >
+        <div class="form-group"> 
+    <mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input matInput formControlName="FirstName">
+  </mat-form-field>
+    <br>         
+    <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput formControlName="LastName">
+  </mat-form-field>
+   <br> 
+      <mat-form-field appearance="fill">
+    <mat-label>Job title</mat-label>
+    <input matInput formControlName="Title">
+  </mat-form-field> 
+    <br>
+        <mat-form-field appearance="fill">
+        <mat-label>Department</mat-label>
+        <input matInput formControlName="Department">
+      </mat-form-field>
+
+   <br>
+<mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput type="number" class="example-right-align" formControlName="Age">
+  </mat-form-field>
+  <br>   
+     <button mat-raised-button  type="submit" color="accent">
+     <i class="material-icons">save</i>
+       </button>
+          <br>
+  
+      </div>   
+    
+      </form>
+   </div>
+</mat-dialog-content>
+

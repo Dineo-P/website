@@ -1,0 +1,72 @@
+<div class="container">
+<h2>Create New Employee</h2>
+<mat-grid-list cols="2" rowHeight="600px">
+  <mat-grid-tile>
+        <div class="container">
+      <form  #f="ngForm" (ngSubmit)="save(f.value)">
+
+    
+  
+    <mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input #FirstName="ngModel" ngModel name="FirstName" matInput >
+  </mat-form-field>
+   
+     <br>
+     
+     
+    <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input #LastName="ngModel"  ngModel name="LastName" matInput >
+  </mat-form-field>
+       <br>
+      
+        
+          <mat-form-field appearance="fill">
+    <mat-label>Job title</mat-label>
+    <input  #Title="ngModel" ngModel name="Title" matInput >
+  </mat-form-field> 
+         
+       <br>
+          <mat-form-field appearance="fill">
+    <mat-label>Department</mat-label>
+    <input  #Department="ngModel" ngModel name="Department" matInput >
+  </mat-form-field> 
+     
+ <br>
+ 
+<mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input #Age="ngModel"  ngModel name="Age" matInput type="number" class="example-right-align" >
+
+  </mat-form-field>
+  <br>
+
+<mat-form-field appearance="fill">
+    <mat-label>Image Url</mat-label>
+    <input #imageUrl="ngModel"  ngModel name="imageUrl" matInput  class="example-right-align" >
+
+  </mat-form-field>
+    <br>
+              
+   <button mat-raised-button  type="submit" >
+   <i class="material-icons">save</i>
+     </button>
+   
+   
+      </form>
+   </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+     <mat-card class="cardFilter" *ngIf="FirstName.value" class="card">
+       <img *ngIf="imageUrl.value" class="img-container"  mat-card-image src="{{imageUrl.value}}" alt="Photo" >
+        <mat-card-content>
+       <h1>{{FirstName.value}} {{LastName.value}}  <span>({{Age.value}})  </span> </h1>
+    <p class="title">{{Title.value}}</p>
+     <p class="department">{{Department.value}} </p>
+  </mat-card-content>
+     </mat-card>
+  </mat-grid-tile>
+
+</mat-grid-list>
+</div>
